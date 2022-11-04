@@ -1,0 +1,5 @@
+include 'ttn-sondehub-bridge'
+include 'cayenne'
+
+rootProject.name = 'ttn-sondehub-bridge'
+
