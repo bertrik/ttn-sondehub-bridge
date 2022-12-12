@@ -46,6 +46,11 @@ subprojects {
         testImplementation libraries.mockito
 
         implementation libraries.slf4j
+        implementation libraries.mqtt_client
+        implementation libraries.jackson
+        implementation libraries.retrofit
+        implementation libraries.slf4jlog4j
+        compileOnly libraries.spotbugs_annotations
     }
 
 }
