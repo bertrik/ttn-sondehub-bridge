@@ -23,4 +23,11 @@ public interface ISondehubRestApi {
     @PUT("/amateur/telemetry")
     Call<String> uploadAmateurTelemetry(@Body List<ObjectNode> telemetry);
 
+    /**
+     * @param listener listener info
+     * @return call result
+     */
+    @PUT("/amateur/listeners")
+    Call<String> uploadAmateurListener(@Body ObjectNode listener);
+
 }
