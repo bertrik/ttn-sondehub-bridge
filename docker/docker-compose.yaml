@@ -1,0 +1,11 @@
+version: "3"
+services:
+  java:
+    image: ghcr.io/bertrik/ttn-sondehub-bridge
+    build: ..
+    restart: always
+    volumes:
+      - "./configuration.yaml:/opt/ttn-sondehub-bridge/configuration.yaml:ro"
+      - "./log4j.properties:/opt/ttn-sondehub-bridge/log4j.properties:ro"
+      - "./log:/opt/ttn-sondehub-bridge/log:rw"
+ 
