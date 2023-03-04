@@ -67,7 +67,7 @@ public final class LoraWanUplinkMessage {
     }
 
     public List<GatewayInfo> getGateways() {
-        return Collections.unmodifiableList(gateways);
+        return List.copyOf(gateways);
     }
 
     public static final class GatewayInfo {
