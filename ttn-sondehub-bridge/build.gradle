@@ -5,18 +5,17 @@ mainClassName = 'nl.bertriksikken.bridge.Application'
 dependencies {
     implementation project(":cayenne")
 
-    implementation libraries.slf4j
-    implementation libraries.reload4j
+    implementation libs.slf4j.reload4j
 
-    implementation libraries.mqtt_client
-    implementation libraries.jackson
+    implementation libs.paho.client.mqttv3
+    implementation libs.bundles.jackson
     
     // REST client
-    implementation libraries.retrofit
+    implementation libs.bundles.retrofit
     
-    compileOnly libraries.spotbugs_annotations
+    compileOnly libs.spotbugs.annotations
     
-    testImplementation libraries.retrofit_mock
+    testImplementation libs.retrofit2.mock
 }
 
 
