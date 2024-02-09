@@ -1,4 +1,5 @@
-FROM eclipse-temurin:11.0.21_9-jre-alpine
+FROM eclipse-temurin:17.0.10_7-jre-alpine
+
 LABEL maintainer="Bertrik Sikken bertrik@gmail.com"
 
 ADD ttn-sondehub-bridge/build/distributions/ttn-sondehub-bridge.tar /opt/
