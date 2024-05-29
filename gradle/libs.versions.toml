@@ -1,8 +1,8 @@
 [versions]
-spotbugs = "4.8.3"
-retrofit2 = "2.9.0"
-jackson = "2.16.1"
-slf4j = "2.0.12"
+spotbugs = "4.8.5"
+retrofit2 = "2.11.0"
+jackson = "2.17.1"
+slf4j = "2.0.13"
 
 [libraries]
 jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind", version.ref = "jackson" }
@@ -20,7 +20,7 @@ junit = "junit:junit:4.13.2"
 
 paho-client-mqttv3 = "org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.5"
 
-mockito-core = "org.mockito:mockito-core:5.10.0"
+mockito-core = "org.mockito:mockito-core:5.12.0"
 
 slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
 slf4j-reload4j = { module = "org.slf4j:slf4j-reload4j", version.ref = "slf4j" }
