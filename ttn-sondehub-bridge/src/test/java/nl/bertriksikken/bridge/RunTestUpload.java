@@ -14,8 +14,6 @@ import nl.bertriksikken.sondehub.SondehubUploader;
  */
 public final class RunTestUpload {
 
-    private static final Logger LOG = LoggerFactory.getLogger(RunTestUpload.class);
-
     public static void main(String[] args) {
         RunTestUpload runner = new RunTestUpload();
         runner.run();

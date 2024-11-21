@@ -2,8 +2,12 @@
 retrofit2 = "2.11.0"
 jackson = "2.18.1"
 slf4j = "2.0.16"
+errorprone = "2.36.0"
 
 [libraries]
+errorprone_annotations = { module = "com.google.errorprone:error_prone_annotations", version.ref = "errorprone" }
+errorprone_core = { module = "com.google.errorprone:error_prone_core", version.ref = "errorprone" }
+
 jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind", version.ref = "jackson" }
 jackson-dataformat-yaml = { module = "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml", version.ref = "jackson" }
 
@@ -26,6 +30,7 @@ jackson = ["jackson-databind", "jackson-dataformat-yaml"]
 retrofit = ["retrofit2-retrofit", "retrofit2-converter-jackson", "retrofit2-converter-scalars", "retrofit2-mock"]
 
 [plugins]
+errorprone = "net.ltgt.errorprone:4.1.0"
 versions = "com.github.ben-manes.versions:0.51.0"
 version-catalog-update = "nl.littlerobots.version-catalog-update:0.8.4"
 dependencycheck = "org.owasp.dependencycheck:8.4.0"

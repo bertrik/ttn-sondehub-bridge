@@ -35,7 +35,7 @@ public final class Location {
     }
 
     /**
-     * @return true if this is a valid location (has latitude and longitude)
+     * Returns true if this is a valid location (has latitude and longitude)
      */
     public boolean isValid() {
         return Double.isFinite(lat) && Double.isFinite(lon);

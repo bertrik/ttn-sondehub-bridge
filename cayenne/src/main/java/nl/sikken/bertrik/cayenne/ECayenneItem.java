@@ -52,7 +52,6 @@ public enum ECayenneItem {
      * 
      * @param type the type code
      * @return the enum, or null if not found
-     * @throws CayenneException  
      */
     public static ECayenneItem parse(int type) throws CayenneException {
     	ECayenneItem item = LOOKUP.get(type);

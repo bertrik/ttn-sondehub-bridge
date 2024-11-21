@@ -100,8 +100,6 @@ public final class Application {
     
     /**
      * Stops the application.
-     * 
-     * @throws MqttException
      */
     private void stop() {
         for (MqttListener listener : mqttListeners) {

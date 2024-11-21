@@ -33,7 +33,6 @@ public final class SondehubUploader {
     private final ExecutorService executor = Executors.newSingleThreadExecutor();
     private final Map<String, Instant> lastUploadTime = new HashMap<>();
 
-    private final SondehubConfig config;
     private final ISondehubRestApi restClient;
 
     /**
@@ -51,7 +50,7 @@ public final class SondehubUploader {
                 .addConverterFactory(ScalarsConverterFactory.create())
                 .addConverterFactory(JacksonConverterFactory.create()).client(client).build();
         ISondehubRestApi restClient = retrofit.create(ISondehubRestApi.class);
-        return new SondehubUploader(config, restClient);
+        return new SondehubUploader(restClient);
     }
 
     /**
@@ -59,8 +58,7 @@ public final class SondehubUploader {
      * 
      * @param restClient the REST client used for uploading
      */
-    SondehubUploader(SondehubConfig config, ISondehubRestApi restClient) {
-        this.config = config;
+    SondehubUploader(ISondehubRestApi restClient) {
         this.restClient = restClient;
     }
 

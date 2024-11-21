@@ -17,13 +17,15 @@ import retrofit2.http.PUT;
 public interface ISondehubRestApi {
 
     /**
+     * Uploads telemetry.
      * @param telemetry list of JSON object nodes created from SondeHubMessage.
-     * @return call result
+     * Returns call result
      */
     @PUT("/amateur/telemetry")
     Call<String> uploadAmateurTelemetry(@Body List<ObjectNode> telemetry);
 
     /**
+     * Uploads listener info.
      * @param listener listener info
      * @return call result
      */

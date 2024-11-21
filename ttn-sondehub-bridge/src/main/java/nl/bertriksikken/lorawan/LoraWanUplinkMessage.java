@@ -39,7 +39,7 @@ public final class LoraWanUplinkMessage {
     }
     
     public Instant getTime() {
-        return Instant.from(time);
+        return time;
     }
 
     public String getDevId() {
