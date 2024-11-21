@@ -15,8 +15,6 @@ dependencies {
     // REST client
     implementation libs.bundles.retrofit
     
-    compileOnly libs.spotbugs.annotations
-    
     testImplementation libs.retrofit2.mock
 }
 

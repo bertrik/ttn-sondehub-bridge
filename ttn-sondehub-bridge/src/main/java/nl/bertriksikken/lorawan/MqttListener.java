@@ -15,7 +15,6 @@ import org.slf4j.LoggerFactory;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import nl.bertriksikken.lorawan.LoraWanUplinkMessage.ILoraWanUplink;
 
 /**
@@ -40,7 +39,6 @@ public final class MqttListener {
      * @param config the MQTT configuration
      * @param clazz the JSON class sent over MQTT
      */
-    @SuppressFBWarnings({"EI_EXPOSE_REP2"})
     public MqttListener(IMessageReceived callback, MqttConfig config, Class<? extends ILoraWanUplink> clazz) {
         LOG.info("Creating client for MQTT server '{}' for app '{}'", config.getUrl(), config.getUser());
         try {
