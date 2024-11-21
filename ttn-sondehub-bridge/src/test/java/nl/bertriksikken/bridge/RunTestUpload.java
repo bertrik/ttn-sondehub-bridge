@@ -1,13 +1,10 @@
 package nl.bertriksikken.bridge;
 
-import java.time.Instant;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import nl.bertriksikken.lorawan.LoraWanUplinkMessage;
 import nl.bertriksikken.sondehub.SondehubConfig;
 import nl.bertriksikken.sondehub.SondehubUploader;
+
+import java.time.Instant;
 
 /**
  * Sends a (fake) telemetry package to sondehub, for testing.

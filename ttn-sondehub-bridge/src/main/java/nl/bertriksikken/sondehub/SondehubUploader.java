@@ -75,11 +75,6 @@ public final class SondehubUploader {
     public void stop() {
         LOG.info("Stopping SondeHub uploader");
         executor.shutdown();
-        try {
-            executor.awaitTermination(5, TimeUnit.SECONDS);
-        } catch (InterruptedException e) {
-            LOG.error("Failed to stop uploader");
-        }
     }
 
     public void scheduleTelemetryUpload(Instant now, LoraWanUplinkMessage uplink) {
