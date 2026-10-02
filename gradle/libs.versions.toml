@@ -32,5 +32,4 @@ retrofit = ["retrofit2-retrofit", "retrofit2-converter-jackson", "retrofit2-conv
 [plugins]
 errorprone = "net.ltgt.errorprone:4.1.0"
 versions = "com.github.ben-manes.versions:0.51.0"
-dependencycheck = "org.owasp.dependencycheck:8.4.0"
 
