@@ -2,7 +2,7 @@
 retrofit2 = "2.12.0"
 jackson = "2.22.3"
 slf4j = "2.0.20"
-errorprone = "2.36.0"
+errorprone = "2.50.0"
 
 [libraries]
 errorprone_annotations = { module = "com.google.errorprone:error_prone_annotations", version.ref = "errorprone" }
@@ -30,6 +30,6 @@ jackson = ["jackson-databind", "jackson-dataformat-yaml"]
 retrofit = ["retrofit2-retrofit", "retrofit2-converter-jackson", "retrofit2-converter-scalars", "retrofit2-mock"]
 
 [plugins]
-errorprone = "net.ltgt.errorprone:4.4.0"
+errorprone = "net.ltgt.errorprone:5.1.1"
 versions = "io.github.ben-manes.versions:0.64.0"
 
