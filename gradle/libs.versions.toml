@@ -1,7 +1,7 @@
 [versions]
-retrofit2 = "2.11.0"
-jackson = "2.18.1"
-slf4j = "2.0.16"
+retrofit2 = "2.12.0"
+jackson = "2.22.3"
+slf4j = "2.0.20"
 errorprone = "2.36.0"
 
 [libraries]
@@ -20,7 +20,7 @@ junit = "junit:junit:4.13.2"
 
 paho-client-mqttv3 = "org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.5"
 
-mockito-core = "org.mockito:mockito-core:5.14.2"
+mockito-core = "org.mockito:mockito-core:5.24.0"
 
 slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
 slf4j-reload4j = { module = "org.slf4j:slf4j-reload4j", version.ref = "slf4j" }
@@ -30,6 +30,6 @@ jackson = ["jackson-databind", "jackson-dataformat-yaml"]
 retrofit = ["retrofit2-retrofit", "retrofit2-converter-jackson", "retrofit2-converter-scalars", "retrofit2-mock"]
 
 [plugins]
-errorprone = "net.ltgt.errorprone:4.1.0"
-versions = "com.github.ben-manes.versions:0.51.0"
+errorprone = "net.ltgt.errorprone:4.4.0"
+versions = "io.github.ben-manes.versions:0.64.0"
 
